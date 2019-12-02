@@ -513,10 +513,16 @@
 			</div>
 		</div>
 	</footer>
-	<!-- libs js-->
-	<script src="js/libs.min.js"></script>
+	<!-- libs js -->
+	<!--  <script src="js/libs.min.js"></script> -->
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/dist/js/standalone/selectize.js"></script>
 	<!-- common js-->
-	<script src="js/common.js"></script>
+	<script>
+		$('#catalog-sort__select').selectize({
+		  
+		});
+	</script>
 </body>
 
 </html>
