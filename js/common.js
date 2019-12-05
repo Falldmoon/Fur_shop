@@ -3,7 +3,37 @@ $(document).ready(function () {
     slidesToShow: 5,
     centerMode: true,
     prevArrow: $('#instagram_l'),
-    nextArrow: $('#instagram_r')
+    nextArrow: $('#instagram_r'),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+    ]
+  })
+  $('.products-row').slick({
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+    ]
+  })
+  $('.header-menu').on('click', function() {
+    let menu = $('.modal-menu')[0]
+    $(menu).addClass('modal-menu_active')
+  })
+  $('.modal-menu__exit').on('click', function() {
+    let menu = $('.modal-menu')[0]
+    $(menu).removeClass('modal-menu_active')
   })
   $('.product-slider').slick({
     vertical: true,
@@ -21,11 +51,42 @@ $(document).ready(function () {
     arrows: false,
     swipe: false,
     asNavFor: '.product-slider',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: true
+        }
+      },
+    ]
+  })
+  $('.articles-mobile').slick({
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+    ]
   })
   $('.col-slider').slick({
   	slidesToShow: 3,
   	prevArrow: $('#instagram_l_c'),
-  	nextArrow: $('#instagram_r_c')
+  	nextArrow: $('#instagram_r_c'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+    ]
   })
   $('.about-slider').slick({
     prevArrow: $('.arrow__slider_l'),
