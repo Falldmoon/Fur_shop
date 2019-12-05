@@ -15,14 +15,29 @@
 </div>
 <header class="header header__dop" id="header">
 	<nav class="header-nav">
-		<div class="container">
+		<div class="container header-mobile">
+			<div class="header-mobile__wrapper">
+				<img src="img/search_white.png" alt="">
+			</div>
+			<div class="header-mobile__wrapper">
+				<a href="#" class="header-mobile__logo">
+					<img src="img/logo-1-1.png" alt="">
+				</a>
+			</div>
+			<div class="header-mobile__wrapper">
+				<div class="header-menu">
+					<img src="img/menu.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container header-desctop">
 			<div class="row">
-				<div class="col-xl-6">
+				<div class="col-md-6">
 					<span class="header__adress">
 						1-я Останкинская улица, д. 55, торговый центр «ВДНХ»,1-й этаж
 					</span>
 				</div>
-				<div class="col-xl-6 header__right">
+				<div class="col-md-6 header__right">
 					<span class="header__time">
 						Салон работает: пн-вс с11:00 до 20:00
 					</span>
@@ -36,7 +51,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container">
+	<div class="container header-under">
 		<div class="header-top">
 			<a href="#"><img src="img/logo.png" alt="" class="header-top__logo"></a>
 			<div class="header-black__wrapper">
@@ -88,6 +103,43 @@
 		</div>
 	</div>
 </header>
+<section class="modal-menu">
+	<img src="img/close.png" alt="" class="modal-menu__exit">
+	<div class="container">
+		<ul class="header-list">
+			<li class="header-list__item">
+				<a href="#">
+					Каталог продукции
+				</a>
+			</li>
+			<li class="header-list__item">
+				<a href="#">
+					О салоне
+				</a>
+			</li>
+			<li class="header-list__item">
+				<a href="#">
+					Акции
+				</a>
+			</li>
+			<li class="header-list__item">
+				<a href="#">
+					Рассрочка и кредит
+				</a>
+			</li>
+			<li class="header-list__item">
+				<a href="#">
+					Блог
+				</a>
+			</li>
+			<li class="header-list__item">
+				<a href="#">
+					Контакты
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
 <section class="bread-crumbs">
 	<div class="container">
 		<span>
@@ -101,7 +153,7 @@
 			Шубы из норки
 		</h1>
 		<div class="row sort-row">
-			<div class="col-lg-8 sort__left">
+			<div class="col-lg-8 col-md-6 sort__left">
 				<div class="catalog-sort">
 					<span class="catalog-sort__title">
 						Сортировать по: 
@@ -117,7 +169,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="col-lg-4 sort__right">
+			<div class="col-lg-4 col-md-6 sort__right">
 				<span class="catalog-sort__title">
 					Вид изделия: 
 				</span>
@@ -129,7 +181,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block">
 					<span class="catalog-block__wrapper_img"><img src="img/img_1.png" alt="" class="catalog-block__img"></span>
 					<div class="catalog-block__bottom">
@@ -139,7 +191,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 							</div>
 						</div>
@@ -149,7 +201,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block">
 					<span class="catalog-block_discount">
 						- 50%
@@ -162,7 +214,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 							</div>
 						</div>
@@ -172,9 +224,9 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block catalog-block_new">
-					<img src="img/img_3.png" alt="" class="catalog-block__img">
+					<span class="catalog-block__wrapper_img"><img src="img/img_3.png" alt="" class="catalog-block__img"></span>
 					<div class="catalog-block__bottom">
 						<div class="catalog-block__wrapper">
 							<span class="catalog-block__title">
@@ -182,7 +234,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 							</div>
 						</div>
@@ -192,7 +244,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block">
 					<span class="catalog-block__wrapper_img"><img src="img/img_2.png" alt="" class="catalog-block__img"></span>
 					<div class="catalog-block__bottom">
@@ -202,7 +254,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 							</div>
 						</div>
@@ -212,7 +264,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block">
 					<span class="catalog-block__wrapper_img"><img src="img/img_3.png" alt="" class="catalog-block__img"></span>
 					<div class="catalog-block__bottom">
@@ -222,7 +274,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 							</div>
 						</div>
@@ -232,7 +284,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4">
 				<a href="#" class="catalog-block">
 					<span class="catalog-block__wrapper_img"><img src="img/img_1.png" alt="" class="catalog-block__img"></span>
 					<div class="catalog-block__bottom">
@@ -242,7 +294,7 @@
 							</span>
 							<div class="price__wrapper">
 								<span class="catalog-block__price">
-									цена: 250 000 ₽
+									<span class="price__mobile">цена:</span> 250 000 ₽
 								</span>
 								<span class="catalog-block__price_last">
 									500 000₽
@@ -255,16 +307,15 @@
 					</div>
 				</a>
 			</div>
-			<div class="catalog-block__wrapper_img"></div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3">
 				
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-5">
 				
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-4 col-all">
 				<span class="footer-view">
 					Показывать по: 
 				</span>
@@ -281,44 +332,31 @@
 		</div>
 	</div>
 </section>
-<section class="articles">
-	<h2 class="section-title">
-		Интересные статьи 
-	</h2>
+<section class="text">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4">
-				<a href="#" class="aricles-block">
-					<img src="img/im-1.png" alt="" class="aricles-block__img">
-					<span class="aricles-block__date">
-						31.10.2019
-					</span>
-					<h3 class="aricles-block__title">
-						Как ухаживать за меховыми изделиями? 
-					</h3>
-				</a>
+			<div class="col-md-6">
+				<img src="img/img-5.png" alt="">
 			</div>
-			<div class="col-lg-4">
-				<a href="#" class="aricles-block">
-					<img src="img/im-2.png" alt="" class="aricles-block__img">
-					<span class="aricles-block__date">
-						31.10.2019
-					</span>
-					<h3 class="aricles-block__title">
-						Как ухаживать за меховыми изделиями? 
-					</h3>
-				</a>
-			</div>
-			<div class="col-lg-4">
-				<a href="#" class="aricles-block">
-					<img src="img/im-3.png" alt="" class="aricles-block__img">
-					<span class="aricles-block__date">
-						31.10.2019
-					</span>
-					<h3 class="aricles-block__title">
-						Как ухаживать за меховыми изделиями? 
-					</h3>
-				</a>
+			<div class="col-md-6">
+				<span class="text__subtitle">
+					Меховой салон
+				</span>
+				<h3 class="text__title">
+					Власть меха -
+				</h3>
+				<p class="text__p">
+					Здравствуйте. Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, 
+					а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+					<br>
+					<br>
+					При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.
+				</p>
+				<div class="text__adress">
+					<img src="img/map_icon.png" alt="">
+					<div class="text__adress_t"><strong>Адрес салона:</strong> 1-я Останкинская улица, д. 55,
+						торговый центр «ВДНХ», 1-й этаж</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -331,6 +369,14 @@
 		<a href="#" class="instagram__link">
 			@meha_na_vdnh
 		</a>
+		<div class="instagram-mobile">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+			<img src="img/image-4.png" alt="" class="instagram-mobile__img">
+		</div>
 	</div>
 	<div class="instagram-slider">
 		<a href="#" class="instagram-slider__slide"><img src="img/image-4.png" alt="" class="instagram-slider__img"></a>
@@ -374,8 +420,9 @@
 	<div class="container">
 		<div class="footer-center">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-md-3 footer__contacts">
 					<img src="img/logo-2.png" alt="" class="footer__logo">
+					<img src="img/logo-mobile.png" alt="" class="footer__logo_mob">
 					<div class="footer-text">
 						<div class="footer__number">
 							8 (929) 671 - 44 - 19
@@ -395,7 +442,7 @@
 						торговый центр «ВДНХ»,1-й этаж
 					</div>
 				</div>
-				<div class="col-lg-3 footer__col">
+				<div class="col-md-3 footer__col">
 					<div class="footer-menu__wrapper">
 						<span class="footer__title">
 							Навигация
@@ -410,7 +457,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 footer__col">
+				<div class="col-md-3 footer__col">
 					<div class="footer-menu__wrapper">
 						<span class="footer__title">
 							Каталог
@@ -425,7 +472,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 footer__col">
+				<div class="col-md-3 footer__col">
 					<span class="footer__title">
 						
 					</span>
@@ -442,7 +489,7 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="row">
-				<div class="col-lg-6 footer-bottom__left">
+				<div class="col-md-6 footer-bottom__left">
 					<div class="footer-bottom__cop">
 						© 2019  “Власть меха” 
 					</div>
@@ -450,7 +497,15 @@
 						политика конфиденциальности
 					</a>
 				</div>
-				<div class="col-lg-6 footer-bottom__right">
+				<div class="col-md-6 footer-bottom__right">
+					<div class="footer-bottom_soc_mob">
+						<a href="#" class="footer-bottom_soc_w">
+							<img src="img/whatsapp.png" alt="">
+						</a>
+						<a href="">
+							<img src="img/viber.png" alt="">
+						</a>
+					</div>
 					<div class="footer-bottom__soc">
 						<a href="#" class="footer__vk">
 							ВКОНТАКТЕ
